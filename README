@@ -1,1 +1,20 @@
-Ten katalog zawiera programy pisane w roku akademickim 2012/2012 na zaliczenie przedmiotu Zaawansowane Jezyki Programowania.
+Ten katalog zawiera programy pisane w roku akademickim 2012/2012 na zaliczenie przedmiotu 
+Zaawansowane Jezyki Programowania.
+
+Biblioteczka sklada sie z trzech programow: 
+
+1. Mnozenie dwoch wektorow
+2. Szacowanie liczby PI metoda Monte Carlo 
+3. Obliczanie calki metoda trapezowa		   
+ 
+Ad.1.  
+Liczba proc: export OMP_NUM_THREADS=2
+Uruchamianie: ./VectorsDot
+
+Ad.2.
+Uruchamianie (wersja sekwencyjna): ./MonteCarloSeq
+Uruchamianie (wersja rownolegla): mpirun -np 2 ./MonteCarloParal
+
+Ad.3. 
+Uruchamianie: mpirun -np 2 ./Integral
+
